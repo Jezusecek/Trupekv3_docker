@@ -14,5 +14,5 @@ services:
     volumes:
       - /path/to/data:/config
     ports:
-      - 6875:88
+      - 6875:80
     restart: unless-stopped

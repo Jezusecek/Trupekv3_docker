@@ -1,0 +1,14 @@
+ bookstack_db:
+    image: lscr.io/linuxserver/mariadb
+    container_name: bookstack_db
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - MYSQL_ROOT_PASSWORD=Pp@F)1w--qq3gsQg
+      - TZ=Europe/Warsaw
+      - MYSQL_DATABASE=nzsorg_wiki
+      - MYSQL_USER=nzsorg_wiki
+      - MYSQL_PASSWORD=Pp@F)1w--qq3gsQg
+    volumes:
+      - /path/to/data:/config
+    restart: unless-stopped
