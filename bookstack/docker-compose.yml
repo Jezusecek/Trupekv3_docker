@@ -24,8 +24,5 @@ services:
     ports:
       - 6875:80
     command: 
-      -  - /bin/bash
-      - -c
-      - |
       - supervisord -n && apt-get update && apt-get install git
     restart: unless-stopped
