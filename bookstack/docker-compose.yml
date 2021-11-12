@@ -6,11 +6,11 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - APP_URL=89.234.233.127
+      - APP_URL=
       - DB_HOST=s6.hekko.pl
       - DB_USER=nzsorg_wiki
       - DB_PASS=Pp@F)1w--qq3gsQg
-      - DB_DATABASE=bookstackapp
+      - DB_DATABASE=nzsorg_wiki
     volumes:
       - /path/to/data:/config
     ports:
