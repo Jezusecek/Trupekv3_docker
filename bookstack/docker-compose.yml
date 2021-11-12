@@ -2,9 +2,6 @@ version: "2"
 services:
   bookstack:
     image: lscr.io/linuxserver/bookstack
-      bild:
-        context: .
-        dockerfile: Dockerfile
     container_name: nzs_wiki
     environment:
       - PUID=1000
