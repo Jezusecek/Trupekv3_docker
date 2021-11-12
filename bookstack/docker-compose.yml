@@ -23,6 +23,4 @@ services:
       - /path/to/data:/config
     ports:
       - 6875:80
-    command: 
-      - supervisord -n
     restart: unless-stopped
