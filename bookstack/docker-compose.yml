@@ -14,6 +14,7 @@ services:
       - MAIL_DRIVER=smtp
       - MAIL_HOST=outlook.office365.com
       - MAIL_PORT=587
+      - MAIL_ENCRYPTION=tls
       - MAIL_USERNAME=wiki@nzs.org.pl
       - MAIL_PASSWORD=Buy08069
       - MAIL_FROM=wiki@nzs.org.pl 
