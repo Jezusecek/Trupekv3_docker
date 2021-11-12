@@ -11,6 +11,14 @@ services:
       - DB_USER=nzsorg_wiki
       - DB_PASS=Pp@F)1w--qq3gsQg
       - DB_DATABASE=nzsorg_wiki
+      - MAIL_DRIVER=smtp
+      - MAIL_HOST=outlook.office365.com
+      - MAIL_PORT=587
+      - MAIL_ENCRYPTION=STARTTLS
+      - MAIL_USERNAME=wiki@nzs.org.pl
+      - MAIL_PASSWORD=Buy08069
+      - MAIL_FROM=wiki@nzs.org.pl 
+      - MAIL_FROM_NAME=NZS_Wiki
     volumes:
       - /path/to/data:/config
     ports:
