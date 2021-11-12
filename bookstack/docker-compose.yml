@@ -2,6 +2,9 @@ version: "2"
 services:
   bookstack:
     image: lscr.io/linuxserver/bookstack
+      bild:
+        context: .
+        dockerfile: Dockerfile
     container_name: nzs_wiki
     environment:
       - PUID=1000
@@ -24,5 +27,5 @@ services:
     ports:
       - 6875:80
     command: 
-      - supervisord -n && apt-get update && apt-get install git
+      - supervisord -n
     restart: unless-stopped
