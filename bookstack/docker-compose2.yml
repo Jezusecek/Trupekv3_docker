@@ -1,0 +1,26 @@
+version: "2"
+services:
+  bookstack:
+    image: lscr.io/linuxserver/bookstack
+    container_name: nzs_wiki_2
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - APP_URL=http://wiki.nzs.org.pl
+      - DB_HOST=localhost
+      - DB_USER=nzsorg_wiki
+      - DB_PASS=Pp@F)1w--qq3gsQg
+      - DB_DATABASE=nzsorg_wiki
+      - MAIL_DRIVER=smtp
+      - MAIL_HOST=outlook.office365.com
+      - MAIL_PORT=587
+      - MAIL_ENCRYPTION=tls
+      - MAIL_USERNAME=wiki@nzs.org.pl
+      - MAIL_PASSWORD=Buy08069
+      - MAIL_FROM=wiki@nzs.org.pl 
+      - MAIL_FROM_NAME=NZS_Wiki
+    volumes:
+      - /path/to/data:/config
+    ports:
+      - 6875:80
+    restart: unless-stopped
